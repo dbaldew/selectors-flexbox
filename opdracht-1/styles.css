@@ -14,9 +14,11 @@ body {
 
 
 /* 1.2 Verander de kleur van alle list items in de unordered list naar hsl(110, 29%, 52%) */
-li > a {
+
+ul{
     color: #65855e;
 }
+
 
 /* 1.3 Geef de 'span' tag in de footer een beschrijvende class name en maak de lettergrootte kleiner  */
 .ciao {
@@ -26,20 +28,21 @@ li > a {
 
 /* 1.4 Haal de text-decoration van navigatie-links weg, geef onbezochte links de kleur hsl(359, 79%, 56%) en verander de kleur wanneer de gebruiker er overheen hovert. */
 
-li > a {
+.wrapper a {
     color: #8f1e20;
+    text-decoration: none;
 }
 
-li > a:hover {
+.wrapper a:hover {
     color: #2d8f27;
 }
 
 /* 1.5 Maak een hover- en visited stijl voor alle links in 'main'. */
-a{
+main a{
     color: #8f1e20;
 }
 
-a:hover {
+main a:hover {
     color: #65855e;
 }
 
@@ -56,11 +59,13 @@ main a:visited {
 
 /* Geef het tekst-veld een blauwe rand wanneer hij in focus is */
 article{
-    display: block;
+    padding: 1px;
+    margin: 1px;
+    display: inline-block;
     position: relative;
 }
 article:hover{
-    display: block;
+    display: inline-block;
     position: relative;
     border-style: solid;
     border-color: #0000ff;
